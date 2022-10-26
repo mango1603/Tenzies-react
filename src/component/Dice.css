@@ -1,0 +1,148 @@
+:root {
+    --dot-space: 5px;
+}
+
+.dice {
+    background-color: white;
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.dice.hold {
+    background-color: #59e391;
+}
+
+.dot {
+    display: block;
+    width: 12px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+
+.dice.face-num-1>.dot {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dice.face-num-2>.dot:first-child {
+    top: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-2>.dot:last-child {
+    bottom: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-3>.dot:first-child {
+    top: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-3>.dot:nth-child(2) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dice.face-num-3>.dot:last-child {
+    bottom: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-4>.dot:first-child {
+    top: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-4>.dot:nth-child(2) {
+    top: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-4>.dot:nth-child(3) {
+    bottom: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-4>.dot:last-child {
+    bottom: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-5>.dot:first-child {
+    top: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-5>.dot:nth-child(2) {
+    top: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-5>.dot:nth-child(3) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dice.face-num-5>.dot:nth-child(4) {
+    bottom: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-5>.dot:last-child {
+    bottom: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-6>.dot:first-child {
+    top: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-6>.dot:nth-child(2) {
+    top: var(--dot-space);
+    right: var(--dot-space);
+}
+
+.dice.face-num-6>.dot:nth-child(3) {
+    top: 0;
+    bottom: 0;
+    left: var(--dot-space);
+    margin: auto;
+}
+
+.dice.face-num-6>.dot:nth-child(4) {
+    top: 0;
+    right: var(--dot-space);
+    bottom: 0;
+    margin: auto;
+}
+
+.dice.face-num-6>.dot:nth-child(5) {
+    bottom: var(--dot-space);
+    left: var(--dot-space);
+}
+
+.dice.face-num-6>.dot:last-child {
+    bottom: var(--dot-space);
+    right: var(--dot-space);
+}
